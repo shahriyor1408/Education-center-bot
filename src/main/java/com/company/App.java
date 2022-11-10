@@ -12,7 +12,6 @@ public class App {
         try {
             TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
             MyBot myBot = new MyBot();
-
             ComponentContainer.MY_TELEGRAM_BOT = myBot;
 
             telegramBotsApi.registerBot(myBot);
