@@ -8,7 +8,6 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 public class App {
     public static void main(String[] args) {
-
         Database.loadData();
         try {
             TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
